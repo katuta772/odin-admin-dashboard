@@ -23,25 +23,48 @@ body{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    padding: 1rem;
     font-weight: bold;
 }
 
 .sidebar-title{
     font-size: 1.5rem;
-    
+    padding: 1rem 0 0 1rem;
 }
 
 .sidebar-upper{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 1rem;
+}
+
+.sidebar-upper>div{
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    padding-left:1rem;
+}
+
+.sidebar-upper>div:hover{
+    text-shadow: 1px 1px 1px darkblue;
+    transform: translateX(20px);
 }
 
 .sidebar-lower{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 1rem;
+}
+
+.sidebar-lower>div{
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    padding-left:1rem;
+}
+
+.sidebar-lower>div:hover{
+    text-shadow: 1px 1px 1px darkblue;
+    transform: translateX(20px);
 }
 
 /* Navbar */
