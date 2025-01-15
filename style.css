@@ -6,6 +6,7 @@ body{
 
 .container {
     display: grid;
+    font-family: 'Roboto', sans-serif;
     grid-template-areas:
       "sidebar navbar"
       "sidebar main";
@@ -19,6 +20,28 @@ body{
     grid-area: sidebar;
     background-color: #1992d4;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.sidebar-title{
+    font-size: 1.5rem;
+    
+}
+
+.sidebar-upper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar-lower{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* Navbar */
