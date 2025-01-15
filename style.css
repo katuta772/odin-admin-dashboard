@@ -1,0 +1,30 @@
+/* Base styles */
+body{
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "sidebar navbar"
+      "sidebar main";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    height: 100vh; /* Full height of the viewport */
+  }
+
+/* Sidebar */
+.sidebar{
+    grid-area: sidebar;
+}
+
+/* Navbar */
+.navbar{
+    grid-area: navbar;
+}
+
+/* Main */
+.main{
+    grid-area: main;
+}
