@@ -10,7 +10,7 @@ body{
     grid-template-areas:
       "sidebar navbar"
       "sidebar main";
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 20% 80%;
     height: 100vh;
   }
@@ -29,6 +29,15 @@ body{
 .sidebar-title{
     font-size: 1.5rem;
     padding: 1rem 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.sidebar-title>img{
+    height: 40px;
+    width: auto;
 }
 
 .sidebar-upper{
