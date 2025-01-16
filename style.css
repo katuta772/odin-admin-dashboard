@@ -10,8 +10,8 @@ body {
   grid-template-areas:
     "sidebar navbar"
     "sidebar main";
-  grid-template-columns: 15% 85%;
-  grid-template-rows: 18% 82%;
+  grid-template-columns: max(220px,15%) 85%;
+  grid-template-rows: max(180px,20%) 80%;
   height: 100vh;
 }
 
