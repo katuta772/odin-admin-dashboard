@@ -188,8 +188,6 @@ body {
   background-color: #e2e8f0;
   display: grid;
   grid-template-areas: 
-    "projects projects side"
-    "projects projects side"
     "projects projects side";
   grid-template-columns: 37.5% 37.5% 25%;
   padding: 3rem;
@@ -198,12 +196,10 @@ body {
 .main-projects{
   grid-area: projects;
   display: inline-grid;
-  grid-template-columns: max(300px, 40%) max(300px, 40%);
-  grid-template-rows: 2% 27% 27% 27%;
+  grid-template-columns: max(300px, 48%) max(300px, 48%);
+  grid-template-rows: 5% clamp(150px, 27%,200px) clamp(150px, 27%,200px) clamp(150px, 27%,200px);
   grid-template-areas: 
   "title title"
-  "projects projects"
-  "projects projects"
   "projects projects";
   gap:1.5rem;
 }
@@ -242,4 +238,34 @@ body {
 
 .main-side{
   grid-area: side;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-side-title{
+  font-size: 1.5rem;
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.main-side-card{
+  height: 60px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 10px solid salmon
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+.card-text{
+  height: 55%;
+  font-size: 0.6rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
