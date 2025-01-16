@@ -186,4 +186,60 @@ body {
 .main {
   grid-area: main;
   background-color: #e2e8f0;
+  display: grid;
+  grid-template-areas: 
+    "projects projects side"
+    "projects projects side"
+    "projects projects side";
+  grid-template-columns: 37.5% 37.5% 25%;
+  padding: 3rem;
+}
+
+.main-projects{
+  grid-area: projects;
+  display: inline-grid;
+  grid-template-columns: max(300px, 40%) max(300px, 40%);
+  grid-template-rows: 2% 27% 27% 27%;
+  grid-template-areas: 
+  "title title"
+  "projects projects"
+  "projects projects"
+  "projects projects";
+  gap:1.5rem;
+}
+
+.main-projects-title{
+  grid-area: title;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.main-projects-project{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 2px 2px 5px grey;
+  box-sizing: border-box;
+  border-left: 10px solid #f0b429;
+}
+
+.main-projects-project-title{
+  font-weight: bold;
+}
+
+.main-projects-project-text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#afafaf;
+  font-size: 0.80rem;
+}
+
+.main-side{
+  grid-area: side;
 }
